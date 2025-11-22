@@ -3,7 +3,7 @@ import threading    #threading for concurrent receive/sendS
 import tkinter as tk    #gui
 from gui import AIMChatWindow
 
-SERVER_IP = "127.0.0.1"  #set to local for now for testing
+SERVER_IP = "127.0.0.1"  #set to local for now for testing, change to server ip to connect over lan network
 PORT = 1234
 mode = "send"
 

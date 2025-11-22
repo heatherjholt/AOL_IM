@@ -41,7 +41,7 @@ This version includes a fully custom **Graphical User Interface (GUI)** for both
 - `set_send_enabled()` for turn enforcement  
 - Sends text through `on_send_callback`
 
-**`client.py`, `server.py`, and `gui.py` can be used instead for a more AOL Instant Messenger experience, without the need to use # or Exit, and allows for text editing and emoji menu.**
+**`client.py`, `server.py`, and `gui.py` can be used instead for a more AOL Instant Messenger experience, without the need to use # or Exit, and allows for text editing and emoji menu. Add LAN IP in `client.py`.**
 ---
 
 ## Network Setup (Two Different Computers)
