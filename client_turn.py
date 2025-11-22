@@ -47,9 +47,9 @@ def start_client(chat_window: AIMTurnWindow):
                         break
     
 
-                my_turn = True
-                chat_window.set_send_enabled(True)  #if server exits, client can still send until client Exit
-                continue
+                    my_turn = True
+                    chat_window.set_send_enabled(True)  #if server exits, client can still send until client Exit
+                    continue
 
                 if text == "#":
                     chat_window.insert_message(SERVER_NAME, "#")
