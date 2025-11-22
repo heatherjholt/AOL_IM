@@ -3,7 +3,7 @@ import threading
 import tkinter as tk
 from gui_turn import AIMTurnWindow
 
-SERVER_IP = "127.0.0.1"
+SERVER_IP = "192.168.1.164" #change to SERVER's ip address
 PORT = 1234
 
 SERVER_NAME = "xxHEATHERxx(Server)"
@@ -15,7 +15,7 @@ def start_client(chat_window: AIMTurnWindow):
     i_sent_exit = False     #tracking Exit messages
     they_sent_exit = False  #tracking Exit messages
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   #create socket then connect
     s.connect((SERVER_IP, PORT))    #connecting to server
 
     chat_window.insert_message("System", f"Connected to server {SERVER_IP}:{PORT}")    #display message when connected

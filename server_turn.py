@@ -15,7 +15,7 @@ def start_server(chat_window: AIMTurnWindow):
     i_sent_exit = False     #tracking Exit messages
     they_sent_exit = False  #tracking Exit messages
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   #socket, bind, listen, accept order
     s.bind((HOST, PORT))
     s.listen(1)   #listen for 1 connection for now
 
